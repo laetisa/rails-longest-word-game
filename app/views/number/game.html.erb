@@ -1,0 +1,9 @@
+<h1>Number#game</h1>
+<p>Find me in app/views/number/game.html.erb</p>
+<p><%= @grid.split('') %></p>
+
+<form action="/score" method="get">
+  <input type="text" name="response" placeholder="Your message">
+  <input type="hidden" name="grid" value= "<%=@grid%>">
+  <input type="submit">
+</form>
